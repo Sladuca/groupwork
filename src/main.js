@@ -97,9 +97,11 @@ async function welcome() {
   document.getElementById("speech").innerText = response.text;
 }
 
-async function createGroup(stake) {
+async function createGroup() {
+  const stake = document.getElementsByName("quantity").value;
   const id = await window.contract.create_group({ stake_required: stake });
   console.log(id);
+  // window.location
 }
 
 // Loads nearlib and this contract into window scope.
