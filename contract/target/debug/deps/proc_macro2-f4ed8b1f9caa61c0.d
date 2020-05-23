@@ -1,0 +1,11 @@
+/Users/sladuca/blockchain/near/groupwork/contract/target/debug/deps/proc_macro2-f4ed8b1f9caa61c0.rmeta: /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/lib.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/parse.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/detection.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/fallback.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/wrapper.rs
+
+/Users/sladuca/blockchain/near/groupwork/contract/target/debug/deps/libproc_macro2-f4ed8b1f9caa61c0.rlib: /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/lib.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/parse.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/detection.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/fallback.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/wrapper.rs
+
+/Users/sladuca/blockchain/near/groupwork/contract/target/debug/deps/proc_macro2-f4ed8b1f9caa61c0.d: /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/lib.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/parse.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/detection.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/fallback.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/wrapper.rs
+
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/lib.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/parse.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/detection.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/fallback.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/proc-macro2-1.0.15/src/wrapper.rs:

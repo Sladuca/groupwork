@@ -1,0 +1,12 @@
+/Users/sladuca/blockchain/near/groupwork/contract/target/debug/deps/base64-71b2aee882f61234.rmeta: /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/lib.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/chunked_encoder.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/display.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/tables.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/write/mod.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/write/encoder.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/encode.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/decode.rs
+
+/Users/sladuca/blockchain/near/groupwork/contract/target/debug/deps/base64-71b2aee882f61234.d: /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/lib.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/chunked_encoder.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/display.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/tables.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/write/mod.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/write/encoder.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/encode.rs /Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/decode.rs
+
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/lib.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/chunked_encoder.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/display.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/tables.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/write/mod.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/write/encoder.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/encode.rs:
+/Users/sladuca/.cargo/registry/src/github.com-1ecc6299db9ec823/base64-0.11.0/src/decode.rs:
