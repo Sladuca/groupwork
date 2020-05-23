@@ -10,7 +10,6 @@ package-lock.json
 #keys
 /neardev
 
-
 # testing
 /coverage
 
