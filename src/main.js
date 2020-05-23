@@ -98,10 +98,28 @@ async function welcome() {
 }
 
 async function createGroup() {
-  const stake = document.getElementsByName("quantity").value;
+  const stake = document.getElementById("numInput").value;
   const id = await window.contract.create_group({ stake_required: stake });
   console.log(id);
-  // window.location
+  //window.location.href = "./group-dashboard.html";
+  //document.getElementById("groupID")
+  setupGroup(id);
+}
+
+async function joinGroup() {
+  const id = document.getElementById("groupID").value;
+  await window.contract.join_group({ group_id: id });
+  console.log(id);
+  //window.location.href = "./group-dashboard.html";
+  //document.getElementById("groupID")
+  setupGroup(id);
+}
+
+async function setupGroup(id) {
+  window.location.href = "./group-dashboard.html";
+  const group = await window.contract.get_group({ group_id: id });
+  console.log(id);
+  //document.getElementById("groupID")
 }
 
 // Loads nearlib and this contract into window scope.
