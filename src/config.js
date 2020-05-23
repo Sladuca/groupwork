@@ -1,4 +1,4 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME ||'groupwork';
+const CONTRACT_NAME = process.env.CONTRACT_NAME ||'groupwork0.sladuca.testnet';
 
 function getConfig(env) {
     switch (env) {
