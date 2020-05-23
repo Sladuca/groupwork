@@ -1,11 +1,17 @@
 use borsh::{BorshDeserialize, BorshSerialize};
+<<<<<<< HEAD
 use near_bindgen::{env, near_bindgen};
 use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
+=======
+use near_sdk::{env, near_bindgen, payable, Balance};
+use std::collections::{HashMap};
+>>>>>>> sebastien
 
 #[global_allocator]
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
+<<<<<<< HEAD
 #[derive(Serialize, Deserialize)]
 pub struct TextMessage {
     text: String
@@ -78,4 +84,71 @@ mod tests {
         let contract = Welcome::default();
         assert_eq!("Hello francis.near".to_string(), contract.welcome("francis.near".to_string()).text);
     }
+=======
+
+#[derive(Default, BorshDeserialize, BorshSerialize)]
+pub struct Group {
+  stake_required: Balance,
+  phase: u8, // 0, 1, 2
+  members: Vec<String>, // [accountId1, accountId2, ...]
+  stakes: HashMap<String, Balance>, // accountId -> stake amount
+  reviews: HashMap<(String, String), u8> // (reviwever, reviewee) -> rating
+}
+
+#[near_bindgen]
+#[derive(Default, BorshDeserialize, BorshSerialize)]
+pub struct GroupworkContract {
+  counter: u64,
+  groups: HashMap<Balance, Group>
+}
+
+#[near_bindgen]
+impl GroupworkContract {
+
+  #[payable]
+  pub fn create_group(&mut self, stake_required: Balance) -> u64 {
+    let mut stakes = HashMap::new();
+    stakes.insert(env::signer_account_id(), env::attached_depoit());
+    let mut reviews = HashMap::new();
+    let group = Group {
+      stake_required,
+      phase: 0,
+      members: vec![env::signer_account_id()],
+      stakes,
+      reviews
+    };
+    self.counter += 1;
+    self.groups.insert(self.counter, group);
+  }
+
+  #[payable]
+  pub fn join_group(&mut self, group_id: u64) -> Option<Group> {
+    match self.groups.get_mut(group_id) {
+      Some(group) => {
+        // update stakes
+        group.stakes.insert(env::signer_account_id(), env::attached_deposit());
+        // update members
+        group.members.push(value);
+        group
+      },
+      None => {
+        // TODO somehow return the funds to the caller
+        None
+      }
+    }
+  }
+
+  pub fn get_group(&mut self, group_id: u64) -> Option<Group> {
+    match self.groups.get(group_id) {
+      Some(group) => { 
+        // check if the signer is a memeber, return null if they arent
+        if (!group.members.contains(env::signer_account_id())) {
+          return None
+        }
+        group
+      },
+      None => None
+    }
+  }
+>>>>>>> sebastien
 }
