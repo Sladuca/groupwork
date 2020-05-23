@@ -1,0 +1,198 @@
+:root {
+  --container-bg-color: rgb(77, 156, 230);
+  --left-bg-color: rgba(170, 174, 177, 0.7);
+  --left-button-hover-color: rgba(34, 93, 170, 0.3);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --right-button-hover-color: rgba(92, 92, 92, 0.3);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 2.5rem;
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+.split.left .button:hover {
+  background-color: var(--left-button-hover-color);
+  border-color: var(--left-button-hover-color);
+}
+
+.split.right .button:hover {
+  background-color: var(--right-button-hover-color);
+  border-color: var(--right-button-hover-color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--container-bg-color);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left: 0;
+  /*background: url("img/design.jpg") center center no-repeat;
+  background-size: cover;*/
+}
+
+.split.left:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.split.right {
+  right: 0;
+  /*background: url("img/code.jpg") center center no-repeat;
+  background-size: cover;*/
+}
+
+.split.right:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .button {
+    width: 12rem;
+  }
+}
+
+@media (max-height) {
+  .button {
+    top: 70%;
+  }
+}
+
+.main-form {
+  padding-top: 5em;
+  width: 450px;
+  margin: auto;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.number-input input[type="number"] {
+  text-align: center;
+}
+
+.md-number-input.number-input {
+  border: 2px solid #ddd;
+  width: 13.8rem;
+}
+.md-number-input.number-input button {
+  outline: none;
+  width: 3rem;
+  height: 2rem;
+  padding-top: 0.8rem;
+}
+.md-number-input.number-input button.minus {
+  padding-left: 8px;
+}
+.md-number-input.number-input button.plus {
+  padding-left: 2px;
+}
+.md-number-input.number-input button:before,
+.md-number-input.number-input button:after {
+  width: 1rem;
+  background-color: #212121;
+}
+.md-number-input.number-input input[type="number"] {
+  max-width: 7rem;
+  padding: 0.5rem;
+  border: solid #ddd;
+  border-width: 0 2px;
+  font-size: 2rem;
+  height: 3rem;
+  font-weight: bold;
+  outline: none;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .number-input.md-number-input.safari_only button:before,
+    .number-input.md-number-input.safari_only button:after {
+      margin-top: -0.6rem;
+    }
+  }
+}
