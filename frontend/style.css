@@ -130,9 +130,7 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
-.number-input {
-  margin: 3rem;
-}
+
 .number-input button {
   -webkit-appearance: none;
   background-color: transparent;
@@ -160,7 +158,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .md-number-input.number-input {
   border: 2px solid #ddd;
-  width: 11.8rem;
+  width: 13.8rem;
 }
 .md-number-input.number-input button {
   outline: none;
@@ -180,7 +178,7 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: #212121;
 }
 .md-number-input.number-input input[type="number"] {
-  max-width: 5rem;
+  max-width: 7rem;
   padding: 0.5rem;
   border: solid #ddd;
   border-width: 0 2px;
@@ -189,6 +187,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-weight: bold;
   outline: none;
 }
+
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
     .number-input.md-number-input.safari_only button:before,
