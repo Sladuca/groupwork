@@ -13,7 +13,7 @@
 ##### IMPORTANT: Make sure you have the latest version of NEAR Shell and Node Version > 10.x 
 
 1. [Node.js](https://nodejs.org/en/download/package-manager/)
-2. (optional) near-shell
+2. near-shell
 
 ```
 npm i -g near-shell
