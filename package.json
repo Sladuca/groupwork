@@ -23,7 +23,7 @@
     "nodemon": "^2.0.3",
     "parcel-bundler": "^1.12.4",
     "env-cmd": "^10.1.0",
-    "shelljs": "^0.8.4"
+    "shelljs": "^0.8.5"
   },
   "dependencies": {
     "near-api-js": "^0.24.0",
